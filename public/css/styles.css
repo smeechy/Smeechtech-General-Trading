@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.blur {
+    background: rgba(16, 85, 120, 0.823);
+    /* // Make sure this color has an opacity of less than 1 */
+    backdrop-filter: blur(3px);
+    /* // This be the blur */
+}
+
+
+
+.nav-blur {
+    background: #91959d;
+    /* // Make sure this color has an opacity of less than 1 */
+    backdrop-filter: blur(3px);
+    /* // This be the blur */
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+}
+
+.myActiveLink{
+    color:#131415;
+}
+
+.txt{
+    color:#131415;
+}

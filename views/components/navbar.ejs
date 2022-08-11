@@ -1,0 +1,20 @@
+
+
+    <nav class="navbar fixed-top navbar-expand-md text-uppercase navbar-light nav-blur">
+        <div class="container text-light">
+            <a href="/" class="navbar-brand mx-auto text-center">
+                <img src="../images/logo.svg" witdh="30" height="30" alt="" class="d-inline-block align-text-top">
+                SMEECHTECH    
+            </a>
+           
+        </div>
+    </nav>
+    <script>
+        const activePage = location.href;
+        const navItem = document.querySelectorAll("a");
+        for(let a=0;a<navItem.length;a++){
+            if(navItem[a].href===activePage){
+                navItem[a].className="nav-link myActiveLink";
+            }
+        }
+    </script>
