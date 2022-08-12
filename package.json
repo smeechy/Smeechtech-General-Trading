@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,9 @@
     "nodemon": "^2.0.19",
     "path": "^0.12.7",
     "prohairesis": "^1.2.5"
+  },
+  "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
   }
 }
